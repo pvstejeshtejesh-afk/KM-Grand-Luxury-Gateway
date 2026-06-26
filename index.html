@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>K.M. GRAND | Luxury Rooms, Banquet Hall & Fine Dining</title>
+  <meta name="description" content="K.M. Grand luxury rooms, A/C banquet hall, Naivedyam pure vegetarian restaurant and Dassara non-vegetarian dining." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="preloader" id="preloader"><div class="crest">KM</div></div>
+
+  <header class="nav">
+    <a href="#home" class="brand"><span>KM</span><b>K.M. GRAND</b></a>
+    <nav class="links" id="links">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#rooms">Rooms</a><a href="#restaurants">Dining</a><a href="#banquet">Banquet</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
+    </nav>
+    <button class="menu" id="menuBtn">☰</button>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content reveal">
+      <p class="eyebrow">Luxury Rooms • Banquet Hall • Fine Dining Experience</p>
+      <h1>K.M. GRAND</h1>
+      <p class="hero-text">Experience exceptional hospitality, elegant accommodations, memorable celebrations, and authentic dining experiences under one roof.</p>
+      <div class="actions">
+        <button onclick="openModal('roomModal')" class="btn gold">Book a Room</button>
+        <button onclick="openModal('tableModal')" class="btn outline">Reserve a Table</button>
+      </div>
+      <div class="stats">
+        <div><b>50+</b><span>Premium Rooms</span></div>
+        <div><b>A/C</b><span>Banquet Hall</span></div>
+        <div><b>2</b><span>Restaurant Wings</span></div>
+        <div><b>100%</b><span>Family Friendly</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section grid2">
+    <div class="reveal">
+      <p class="eyebrow">About the Brand</p>
+      <h2>Hospitality crafted for stays, celebrations and dining.</h2>
+      <p>K.M. Grand is a premium hospitality venue offering luxury accommodation, banquet facilities, and exceptional dining experiences through its two signature restaurant brands: Naivedyam and Dassara.</p>
+      <div class="mini-grid">
+        <article>Luxury Rooms</article><article>Banquet Hall</article><article>Fine Dining</article><article>Family Events</article>
+      </div>
+    </div>
+    <img class="photo reveal" src="assets/km-grand-building-naivedyam.jpeg" alt="K.M. Grand and Naivedyam building">
+  </section>
+
+  <section id="rooms" class="section">
+    <p class="eyebrow center">Accommodations</p>
+    <h2 class="center">Luxury Rooms Portfolio</h2>
+    <div class="cards">
+      <article class="card reveal"><img src="assets/km-grand-building-naivedyam.jpeg" alt="Deluxe Double Sanctuary"><h3>Deluxe Double Sanctuary</h3><p>Comfortable premium stay for families and couples.</p><div class="tags"><span>Wi‑Fi</span><span>AC</span><span>Smart TV</span><span>Room Service</span></div><button onclick="openModal('roomModal')" class="btn small">Book Now</button></article>
+      <article class="card reveal"><img src="assets/km-grand-building-naivedyam.jpeg" alt="Executive Twin Chamber"><h3>Executive Twin Chamber</h3><p>Business-friendly room with elegant comfort.</p><div class="tags"><span>Twin Beds</span><span>Workspace</span><span>Breakfast</span><span>Amenities</span></div><button onclick="openModal('roomModal')" class="btn small">Book Now</button></article>
+      <article class="card reveal"><img src="assets/km-grand-building-naivedyam.jpeg" alt="Imperial King Pavilion"><h3>Imperial King Pavilion</h3><p>A refined suite experience for special stays.</p><div class="tags"><span>Suite</span><span>Living Area</span><span>VIP Service</span><span>Premium Interior</span></div><button onclick="openModal('roomModal')" class="btn small">Book Now</button></article>
+    </div>
+  </section>
+
+  <section id="restaurants" class="section restaurant-wrap">
+    <p class="eyebrow center">Signature Dining</p>
+    <h2 class="center">Naivedyam & Dassara</h2>
+    <div class="tabs"><button class="tab active" data-tab="veg">Naivedyam</button><button class="tab" data-tab="nonveg">Dassara</button></div>
+    <div class="tab-panel active" id="veg">
+      <img src="assets/km-grand-building-naivedyam.jpeg" alt="Naivedyam Pure Vegetarian Restaurant"><div><h3>Naivedyam</h3><p class="sub">Pure Vegetarian Restaurant</p><p>Traditional vegetarian cuisine prepared with authentic recipes and premium ingredients.</p><ul><li><b>Kamma Neyyi Podi Dosa</b> — Crispy golden rice-crepe layered with clarified butter and hand-pounded lentil spice mix.</li><li><b>Avakaya Annam</b> — Royal basmati short grains infused with heritage mango pickling paste.</li><li><b>Pesarattu Upma</b> — Traditional Andhra green gram crepe served with flavorful upma.</li><li><b>Gongura Pappu</b> — Tangy sorrel leaves blended with slow-cooked lentils.</li></ul><button onclick="openModal('tableModal')" class="btn gold">Reserve Vegetarian Dining</button></div>
+    </div>
+    <div class="tab-panel" id="nonveg">
+      <img src="assets/dassara.jpeg" alt="Dassara Flavours of Masala"><div><h3>Dassara</h3><p class="sub">Flavours of Masala</p><p>Authentic non-vegetarian cuisine with rich spices, premium ingredients, and traditional Andhra flavours.</p><ul><li><b>Miriyala Kodi Vepudu</b> — Succulent chicken cubes wok-tossed with crushed black peppercorns and curry leaves.</li><li><b>Gongura Mamsam Biryani</b> — Layered basmati rice cooked with slow-braised lamb and tangy sorrel leaves.</li><li><b>Natukodi Pulusu</b> — Traditional country chicken curry cooked with aromatic spices.</li><li><b>Royyala Iguru</b> — Andhra-style spicy prawn delicacy.</li></ul><button onclick="openModal('tableModal')" class="btn gold">Reserve Non-Veg Dining</button></div>
+    </div>
+  </section>
+
+  <section id="banquet" class="section banner reveal">
+    <div><p class="eyebrow">A/C Banquet Hall</p><h2>Grand spaces for unforgettable occasions.</h2><p>Perfect for weddings, receptions, birthdays, engagements, corporate meetings and family gatherings.</p><button onclick="openModal('tableModal')" class="btn gold">Event Inquiry</button></div>
+  </section>
+
+  <section id="gallery" class="section">
+    <p class="eyebrow center">Media Gallery</p><h2 class="center">Real K.M. Grand Visuals</h2>
+    <div class="gallery">
+      <img src="assets/km-grand-building-naivedyam.jpeg" alt="K.M. Grand exterior"><img src="assets/dassara.jpeg" alt="Dassara restaurant"><img src="assets/km-grand-building-naivedyam.jpeg" alt="Naivedyam entrance"><img src="assets/dassara.jpeg" alt="Restaurant entrance">
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <div><p class="eyebrow">Concierge Access</p><h2>Contact & Location</h2><p><b>Phone:</b> <a href="tel:+919948352111">9948352111</a></p><p><b>Business Hours:</b> 6:00 AM – 10:00 PM</p><div class="actions"><a class="btn gold" href="tel:+919948352111">Call Now</a><a class="btn outline" target="_blank" href="https://wa.me/919948352111">WhatsApp</a><a class="btn outline" target="_blank" href="https://maps.app.goo.gl/DYSyBWv9CKRmU93t7?g_st=aw">Get Directions</a></div></div>
+  </section>
+
+  <footer><h2>K.M. GRAND</h2><p>Luxury Rooms • Banquet Hall • Naivedyam Restaurant • Dassara Restaurant</p><span>Luxury • Comfort • Celebration</span></footer>
+
+  <div class="float"><a href="tel:+919948352111">☎</a><a target="_blank" href="https://wa.me/919948352111">☘</a></div>
+
+  <div class="modal" id="roomModal"><form class="modal-card"><button type="button" onclick="closeModal('roomModal')" class="close">×</button><h2>Room Booking</h2><input placeholder="Name" required><input placeholder="Mobile Number" required><input type="date" required><input type="date" required><select><option>Deluxe Double Sanctuary</option><option>Executive Twin Chamber</option><option>Imperial King Pavilion</option></select><button class="btn gold" type="submit">Confirm Room Booking</button><p class="success"></p></form></div>
+  <div class="modal" id="tableModal"><form class="modal-card"><button type="button" onclick="closeModal('tableModal')" class="close">×</button><h2>Table Reservation</h2><input placeholder="Name" required><input placeholder="Phone Number" required><input type="date" required><input type="time" required><select><option>Naivedyam (Pure Veg)</option><option>Dassara (Non-Veg)</option><option>A/C Banquet Hall Event Inquiry</option></select><button class="btn gold" type="submit">Confirm Table Reservation</button><p class="success"></p></form></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
